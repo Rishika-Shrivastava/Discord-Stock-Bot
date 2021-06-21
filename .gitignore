@@ -1,0 +1,13 @@
+#backups
+/backups
+
+#folders not to include
+/Stock_Info_Retrieval
+/venv
+
+#files not to include
+.env
+send_fig.png
+stock_csv.csv
+discord_trial.txt
+fig2.png
