@@ -7,7 +7,5 @@
 
 #files not to include
 .env
-send_fig.png
 stock_csv.csv
 discord_trial.txt
-fig2.png
