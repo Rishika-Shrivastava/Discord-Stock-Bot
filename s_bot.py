@@ -104,22 +104,7 @@ async def generate_figure(ctx, stock='TSLA', channel_name='stock-channel'):
         await channel.send(file=discord.File('E:/Projects/Python/Discord Stock Bot/send_fig.png'))
 
 
-# @bot.command(name='help-me')
-# async def help_print(ctx, channel_name='stock-channel'):
-#     guild = ctx.guild
-#     channel = discord.utils.get(guild.channels, name=channel_name)
-#
-#     if not channel:
-#         await ctx.send('Channel doesn\'t exist')
-#     else:
-#         channel_id = channel.id
-#         await channel.send('List of Commands:\n1.create-channel 2.get-stock-update 3.get-stock-fig'
-#                            '\nPrefix for every command is !.\nSyntax for create-channel: !create-channel channel_name\n'
-#                            'Syntax for get-stock-update: !get-stock-update stock_name channel_name\n'
-#                            'Syntax for get-stock-fig !get-stock-fig stock_name channel_name\n'
-#                            '*Note that this bot sends updates for the US Stock Market')
-
-
+#if role is not admin
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.errors.CheckFailure):
